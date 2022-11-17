@@ -230,9 +230,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8566328244460803509}
   - component: {fileID: 8566328244460803510}
-  - component: {fileID: 8566328244460803511}
   - component: {fileID: 8566328244460803508}
   - component: {fileID: 1221579656}
+  - component: {fileID: 736733972}
   m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
@@ -275,7 +275,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8566328244460803511
+--- !u!114 &8566328244460803508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,7 +284,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 8566328244460803504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 30ab33db4ac01494da68bc9e2a74bea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 860048782493554358, guid: 118deb9215454b848a0143c30033a336, type: 3}
+  spawnPoint: {fileID: 8566328244559501700}
+  fireSpeed: 40
+--- !u!65 &1221579656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566328244460803504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01748127, y: 0.064799845, z: 0.12689638}
+  m_Center: {x: -0.0011154601, y: -0.03127804, z: -0.018207276}
+--- !u!114 &736733972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566328244460803504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a3b47451065e2468975b7c382fb67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -395,34 +423,8 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &8566328244460803508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566328244460803504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30ab33db4ac01494da68bc9e2a74bea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 860048782493554358, guid: 118deb9215454b848a0143c30033a336, type: 3}
-  spawnPoint: {fileID: 8566328244559501700}
-  fireSpeed: 40
---- !u!65 &1221579656
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566328244460803504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.01748127, y: 0.064799845, z: 0.12689638}
-  m_Center: {x: -0.0011154601, y: -0.03127804, z: -0.018207276}
+  leftAttachTransform: {fileID: 689239560}
+  rightAttachTransform: {fileID: 8566328244731654412}
 --- !u!1 &8566328244559501701
 GameObject:
   m_ObjectHideFlags: 0
