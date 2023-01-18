@@ -13,12 +13,11 @@ public class TeleportationController : MonoBehaviour
     private InputAction teleportModeActivate;
     private InputAction teleportModeCancel;
 
-    private XRRayInteractor teleportInteractor;
+    public XRRayInteractor teleportInteractor;
 
     
     void Start()
     {
-        teleportInteractor = GetComponent<XRRayInteractor>();
         teleportModeActivate = m_teleportModeActivate.action;
         teleportModeCancel = m_teleportModeCancel.action;
         EnableAction();
@@ -50,7 +49,7 @@ public class TeleportationController : MonoBehaviour
     {
         if (teleportInteractor != null)
         {
-            teleportInteractor.enabled = isEnable;
+            teleportInteractor.gameObject.SetActive(isEnable);
         }
         
     }

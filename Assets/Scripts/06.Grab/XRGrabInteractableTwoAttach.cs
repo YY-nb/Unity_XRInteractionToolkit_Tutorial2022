@@ -9,7 +9,6 @@ public class XRGrabInteractableTwoAttach : XRGrabInteractable
     public Transform rightAttachTransform;
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-
         if(args.interactorObject.transform.CompareTag("Left Hand"))
         {
             attachTransform = leftAttachTransform;
